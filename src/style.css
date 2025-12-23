@@ -15,13 +15,11 @@ html {
 }
 
 body {
-  /* Supprime ou commente le background-color ici */
 background-color: transparent; /* On garde la transparence pour voir le fond fixe */
   color: var(--text-primary);
   font-family: var(--font-body);
   overflow-x: hidden;
   font-size: 18px;
-  /* Assure-toi qu'il n'y a pas de display: flex ici */
 }
 
 #space-background {
@@ -31,7 +29,7 @@ background-color: transparent; /* On garde la transparence pour voir le fond fix
   width: 100%; 
   height: 100%;
   z-index: -1; 
-  /* Le dégradé simule la profondeur de l'espace */
+  /*dégradé simule la profondeur de l'espace */
   background: radial-gradient(circle at bottom, #1b2735 0%, #050505 100%);
   overflow: hidden;
 }
@@ -181,7 +179,7 @@ h2 { font-size: 1.5rem; color: var(--accent-color); margin-bottom: 1.5rem; }
   display: flex;
   align-items: center;
   gap: 2rem;
-  flex-wrap: wrap; /* Pour que ça passe l'un sous l'autre sur mobile */
+  flex-wrap: wrap; 
 }
 
 .my-photo {

@@ -9,8 +9,6 @@ interface StarElement extends HTMLDivElement {
 }
 
 function createStars() {
-  // Si cette ligne s'arrête ici, c'est que l'ID "space-background" 
-  // n'est pas présent dans ton index.html
   if (!spaceContainer) {
     console.error("Le conteneur #space-background est introuvable !");
     return;
@@ -31,10 +29,10 @@ function createStars() {
     star.style.left = `${x}%`;
     star.style.top = `${y}%`;
     
-    // --- MODIFICATION ICI ---
+    
     // Force l'étoile à être au premier plan du fond étoilé
     star.style.zIndex = "1"; 
-    // ------------------------
+    
 
     // Vitesse de parallaxe basée sur la taille
     star.speed = size * 0.2; 
