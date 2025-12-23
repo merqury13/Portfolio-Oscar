@@ -1,14 +1,130 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cool</title>
+    <title>Portfolio Ingénieur | Flight Log</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <h1> Mon portfolio - Oscar Salomon</h1>
-    <div id="root"></div>
+    <div id="space-background"></div> 
+
+    <main id="app">
+      <section class="screen hero">
+        <div class="hud-container">
+          <!--p class="tagline">:: SYSTÈME INITIA</p>-->
+          <h1>SALOMON Oscar</h1>
+          <h2>INGÉNIEUR   du NUMÉRIQUE <span class="blink">_</span></h2>
+          <p class="sub-text">Passionné d'aérospatial et d'innovation.</p>
+          <a href="#projects" class="btn-launch">En apprendre davantage</a>
+        </div>
+      </section>
+
+      <section class="content-section" id="profile">
+      <div class="glass-card profile-layout">
+        <div class="profile-photo-container">
+          <img src="/pdp.JPG" alt="Oscar Salomon" class="my-photo">
+        </div>
+        
+        <div class="profile-text">
+          <h3>PROFIL</h3>
+          <p>
+            Etudiant en 4ème année du cycle ingénieur international à l'<strong>ESIEA</strong>, école d'ingénieurs du numérique...
+            <br><br>
+            <strong>Expériences avec :</strong> JAVA, C, HTML/CSS, SQL, Python (IA / ML), Bash, VHDL, Django Rest Framework...
+          </p>
+        </div>
+      </div>
+    </section>
+
+      <section class="content-section" id="projects">
+        <h3 class="section-title">PROJETS</h3>
+        
+        <div class="grid-projects">
+          <article class="project-card">
+            <div class="card-image" style="background-image: url('/villageLockers.png');"></div>
+            <div class="card-content">
+              <h4>Village Lockers</h4>
+              <br><br>
+              <p>Développement d'un <strong>service de livraisons centralisées</strong>, desservies dans un réseau de casiers 
+                connectés partagés, placés à des points de passages stratégiques. Objectifs de réduction de la 
+                dépendance à la voiture en campagnes, réduire l'empreinte carbonne des livraisons...</p>
+              <div class="tech-tags">
+                <span>Django RF</span><span>ESP32</span><span>Python</span><span>Data</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-image" style="background-image: url('/UART.png');"></div>
+            <div class="card-content">
+              <h4>Développement d'un UART</h4>
+              <br><br>
+              <p>Etablir une <strong>communication série entre la carte FPGA et l’ordinateur</strong> en utilisant une IP UART 
+que vous écrite en VHDL. offrant la possibilité d'échanger avec une FPGA au travers d'un terminal comme Putty pour 
+controler un servo moteur ou encore un capteur à ultrasons.</p>
+              <div class="tech-tags">
+                <span>VHDL</span><span>ModelSim</span><span>QuartusPrime</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-image" style="background-image: url('/drone.png');"></div>
+            <div class="card-content">
+              <h4>Drone FPV</h4>
+              <br><br>
+              <p>Construction et pilotage de drones FPV.</p>
+              <div class="tech-tags">
+                <span>Soudures</span><span>Betaflight</span>
+              </div>
+            </div>
+          </article>
+
+           <article class="project-card">
+            <div class="card-image" style="background-image: url('/Pompier.png');"></div>
+            <div class="card-content">
+              <h4>Robot pompier</h4>
+              <br><br>
+              <p>Fabrication et programmation d'un robot camion de pompier en 1 semaine.</p>
+              <div class="tech-tags">
+                <span>C</span><span>Rasberry Pi</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section footer" id="contact">
+  <div class="glass-card compact">
+    <h3>Me contacter</h3>
+    <p>Vous êtes intéressé par mon profil ? Contactez-moi maintenant !</p>
+    <br><br>
+    <p>En cliquant sur mon email, rendez vous sur votre service d'email.</p>
+    
+    <div class="contact-wrapper">
+      <a href="mailto:salomon@et.esiea.fr" class="email-display">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span>salomon@et.esiea.fr</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/oscar-salomon-339126241/" target="_blank" rel="noopener noreferrer" class="linkedin-button-elegant">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+    
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
